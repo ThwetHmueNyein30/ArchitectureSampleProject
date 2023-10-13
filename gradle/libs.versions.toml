@@ -1,0 +1,45 @@
+[versions]
+androidxAppCompat = "1.6.1"
+androidxCore = "1.12.0"
+androidGradlePlugin = "8.1.0-rc01"
+compileSdk= "34"
+hilt = "2.44.2"
+kotlin = "1.8.0"
+ksp = "1.8.10-1.0.9"
+kotlinxCoroutines = "1.7.3"
+material = "1.10.0"
+# @keep
+minSdk = "21"
+okhttp = "4.10.0"
+paging_version = "3.2.1"
+retrofit = "2.9.0"
+retrofitKotlinxSerializationJson = "0.8.0"
+room = "2.6.0-rc01"
+targetSdk = "33"
+truth = "1.1.2"
+
+[libraries]
+google-material = {group = "com.google.android.material", name = "material",version.ref= "material"}
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+paging-runtime ={group = "androidx.paging",name="paging-runtime",version.ref = "paging_version"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
