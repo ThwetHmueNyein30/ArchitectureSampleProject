@@ -2,8 +2,12 @@
 androidxAppCompat = "1.6.1"
 androidxCore = "1.12.0"
 androidGradlePlugin = "8.1.0-rc01"
+androidxEspresso = "3.5.1"
 compileSdk= "34"
+constraintLayout = "2.1.4"
+espresso = "3.5.1"
 hilt = "2.44.2"
+junit4 = "4.13.2"
 kotlin = "1.8.0"
 ksp = "1.8.10-1.0.9"
 kotlinxCoroutines = "1.7.3"
@@ -19,9 +23,10 @@ targetSdk = "33"
 truth = "1.1.2"
 
 [libraries]
-google-material = {group = "com.google.android.material", name = "material",version.ref= "material"}
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-constraint = { group = "androidx.constraintlayout", name= "constraintlayout", version.ref="constraintLayout"}
+google-material = {group = "com.google.android.material", name = "material",version.ref= "material"}
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
@@ -31,6 +36,10 @@ room-testing = { group = "androidx.room", name = "room-testing", version.ref = "
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 paging-runtime ={group = "androidx.paging",name="paging-runtime",version.ref = "paging_version"}
+junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
